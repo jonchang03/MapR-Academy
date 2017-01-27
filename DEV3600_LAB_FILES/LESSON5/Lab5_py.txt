@@ -46,7 +46,7 @@ top3CatSQL = sqlContext.sql("SELECT category, count(incidentnum) AS inccount FRO
 top3CatSQL.show()
 
 # 4. Save the top 10 resolutions to a JSON file.
-# depracated - top10ResSQL.toJSON.saveAsTextFile("/Users/jchang16/Learning/Spark/lab5/")
+# depracated - top10ResSQL.toJSON.saveAsTextFile("/Users/jchang16/Learning/Spark/data/lab5/")
 # use write for Spark 1.4.x onwards
 top10ResSQL.write.format("json").mode("overwrite").save("/Users/jchang16/Learning/Spark/lab5/")
 
