@@ -15,6 +15,7 @@ Y = 10
 PdId = 11
 
 # Load SFPD data into RDD
+# sfpdRDD = sc.textFile("/user/user01/data/sfpd.csv").map(lambda line:line.split(","))
 sfpdRDD = sc.textFile("/Users/jchang16/Learning/Spark/data/sfpd.csv").map(lambda line:line.split(","))
 
 ## LAB 4.2.1 Explore Data Using RDD Operations******************/
